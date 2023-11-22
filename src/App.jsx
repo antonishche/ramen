@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>{allProductsCount}</h1>
+      <h1>Корзина:{allProductsCount}</h1>
    <div className="wrapper-gl_cards">
    {Burgers.map(item => (<Card {...item} key={item.id} editAllProductsCount={editAllProductsCount} delCards={delCards}/>))}
    </div>
