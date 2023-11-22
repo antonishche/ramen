@@ -1,0 +1,26 @@
+.container_card{
+    width: 80vw;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    .content{
+        width: 40%;
+    }
+}
+.wr_button{
+    font-size: 30px;
+    button{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+}
+.wr_img{
+    flex-basis: 20%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
