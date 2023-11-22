@@ -5,7 +5,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
+    background-color: rgba(222, 228, 158, 0.237);
+    -webkit-box-shadow: 19px 10px 15px 3px rgba(110, 140, 19, 0.25);
+    -moz-box-shadow: 19px 10px 15px 3px rgba(110, 140, 19, 0.25);
+    box-shadow: 19px 10px 15px 3px rgba(110, 140, 19, 0.25);
+    border-radius: 20px;
     .content{
         width: 40%;
     }
@@ -16,6 +20,13 @@
         width: 40px;
         height: 40px;
         margin: 10px;
+        border-radius: 50%;
+        border: none;
+        background-color:  rgb(232, 232, 163);
+        transition: 0.2s;
+        &:hover{
+          background-color: rgb(189, 189, 159);
+        }
     }
 }
 .wr_img{
