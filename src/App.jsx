@@ -7,6 +7,17 @@ function App() {
   
   const [Burgers,setBurgers] = useState(ArrCards)
 
+  
+  const [allCost,setAllCost] = useState(0)
+  
+  function editAllCost(confCost , amper) {
+    if (String(amper) === "-1") {
+      setAllCost(Number(allCost) - Number(confCost))
+  }else{
+    setAllCost(Number(allCost) + Number(confCost))
+  }
+  }
+
   const [allProductsCount,setAllProductsCount] = useState(0)
 
  function editAllProductsCount(amper) {
@@ -27,7 +38,8 @@ function App() {
     <div className="container">
       <h1>Корзина:{allProductsCount}</h1>
    <div className="wrapper-gl_cards">
-   {Burgers.map(item => (<Card {...item} key={item.id} editAllProductsCount={editAllProductsCount} delCards={delCards}/>))}
+   {Burgers.map(item => (<Card {...item} key={item.id} editAllProductsCount={editAllProductsCount} delCards={delCards} editAllCost={editAllCost} setAllCost={setAllCost}/>))}
+   <h1>Ценоимость: {allCost}</h1>
    </div>
 
       

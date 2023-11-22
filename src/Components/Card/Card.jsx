@@ -2,17 +2,22 @@ import "./Card.scss"
 import { useState } from 'react';
 import del from "../../images/close.png"
 
-export default function Card({context,weight,cost,classX,confCost,img,editAllProductsCount,delCards,id}) {
+export default function Card({context,cost,confCost,img,editAllProductsCount,delCards,id,editAllCost}) {
  const [num,setNum] = useState(0)
 
- function editCount(amper) {
+ function editCount( amper) {
     if (String(amper) === "-1" && num === 0) {
+        delCards(id)
         return
     }
     const result = num + amper
     editAllProductsCount(amper)
     setNum(result)
+    editAllCost(confCost, amper)
+    console.log(confCost,amper);
  }
+  
+  
  
  return <div className="container_card">
     <div className="wr-img">
