@@ -1,6 +1,5 @@
 import "./Card.scss"
 import { useState } from 'react';
-import del from "../../images/close.png"
 
 export default function Card({context,cost,confCost,img,editAllProductsCount,delCards,id,editAllCost}) {
  const [num,setNum] = useState(0)
@@ -17,27 +16,22 @@ export default function Card({context,cost,confCost,img,editAllProductsCount,del
     console.log(confCost,amper);
  }
   
-  
- 
  return <div className="container_card">
     <div className="wr-img">
         <img src={img} alt="" />
     </div>
     <div className="wr-content">
         <div className="title">
-            <h3>{context}</h3>
+            <h4>{context}</h4>
         </div>
         <div className="info_func">
             <div className="price">{cost}</div>
-            <div className="wr_button">
-                <button onClick={()=>editCount(-1)}>-</button>
-                <span>{num}</span>
-                <button onClick={()=>editCount(+1)}>+</button>
-            </div>
         </div>
     </div>
-        <div className="basket" onClick={()=>{delCards(id)}}>
-            <img src={del} alt="" />
-        </div>
+    <div className="wr_button">
+        <button onClick={()=>editCount(-1)}>-</button>
+        <span>{num}</span>
+        <button onClick={()=>editCount(+1)}>+</button>
+    </div>
   </div>
 }

@@ -1,0 +1,44 @@
+[
+    {
+        "img": "./burger1.png",
+        "cost": "689",
+        "context": "Мясная бомба",
+        "weight": "520г",
+        "id": "1"
+    },
+    {
+        "img": "./burger2.png",
+        "cost": "550",
+        "context": "Супер сырный",
+        "weight": "512г",
+        "id": "2"
+    },
+    {
+        "img": "./burger3.png",
+        "cost": "639",
+        "context": "Сытный",
+        "weight": "580г",
+        "id": "3"
+    },
+    {
+        "img": "./burger4.png",
+        "cost": "480",
+        "context": "Тяжелый удар",
+        "weight": "470г",
+        "id": "4"
+    },
+    {
+        "img": "./burger5.png",
+        "cost": "450",
+        "context": "Вечная классика",
+        "weight": "450г",
+        "id": "5"
+    },
+    {
+        "img": "./burger6.png",
+        "cost": "560",
+        "context": "Итальянский",
+        "weight": "510г",
+        "id": "6"
+    }
+]

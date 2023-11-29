@@ -1,0 +1,25 @@
+$cl-btn: rgb(255, 85, 0);
+
+.menu_burger_container{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px;
+    .description{
+        margin: 20px 0;
+    }
+    button{
+        border: none;
+        width: 100%;
+        height: 35px;
+        font-size: 20px;
+        transition: 0.2s;
+        border-radius: 12px;
+        margin-top: 10px;
+
+        &:hover{
+            background-color: $cl-btn;
+            color: white;
+        }
+    }
+}
